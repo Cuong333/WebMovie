@@ -121,5 +121,10 @@ public partial class MovieContext : DbContext
         OnModelCreatingPartial(modelBuilder);
     }
 
+    internal async Task GetMovieAsync(string title)
+    {
+        throw new NotImplementedException();
+    }
+
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
 }
